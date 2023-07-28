@@ -4,7 +4,7 @@ ENV USERNAME deployee
 RUN useradd -ms /bin/bash ${USERNAME}
 USER ${USERNAME}
 
-ENV PROJECT_NAME nanhu-print-demo
+ENV PROJECT_NAME nanhu-print-java-demo
 ENV DEPLOY_DIR /home/${USERNAME}/webroot
 ENV VM_OPTION "-Xms128m -Xmx512m"
 
