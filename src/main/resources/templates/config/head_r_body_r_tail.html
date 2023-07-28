@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>repeat body</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}">
+
+    <script type="text/javascript" th:src="@{/js/framework/jquery-1.11.1.min.js}"></script>
+    <script type="text/javascript">
+        var contextPath='[[${#httpServletRequest.getContextPath()}]]';
+    </script>
+    <script type="text/javascript" th:src="@{/js/jsonix/Jsonix-all.js?ver=20190213_1207}"></script>
+    <script type="text/javascript" th:src="@{/js/nanhuprint/nanhuprint.js?ver=20190213_1207}"></script>
+    <script type="text/javascript" th:src="@{/js/nanhuprint/nanhuprintEval.js?ver=20190213_1207}"></script>
+    <script type="text/javascript" th:src="@{/js/nanhuprint/interpreter.js?ver=20190213_1207}"></script>
+
+    <script type="text/javascript" th:src="@{/js/config/head_r_body_r_tail.js?ver=20190213_1207}"></script>
+</head>
+
+<body>
+<table cellspacing="0" cellpadding="0" border="0" class="contentTable">
+    <tr>
+        <td valign="top">
+            <div class="leftArea">
+                <form id="configForm" name="configForm" action="about:blank" method="post">
+                    <div>
+                        <div class="configLabelArea">fontSize:</div>
+                        <div class="configContentArea">
+                            <input type="radio" name="fontSize" value="-4" id="fontSize_4" />
+                            <label for="fontSize_4">-4</label>
+
+                            <input type="radio" name="fontSize" value="-2" id="fontSize_2" />
+                            <label for="fontSize_2">-2</label>
+
+                            <input type="radio" name="fontSize" value="0" id="fontSize0" checked />
+                            <label for="fontSize0">0</label>
+
+                            <input type="radio" name="fontSize" value="0" id="fontSize2" />
+                            <label for="fontSize2">+2</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="headerAddress" value="1" id="headerAddress" checked />
+                            <label for="headerAddress">Header Address</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="headerAddressHtml" value="this is headerAddress" id="headerAddressHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="headerName" value="1" id="headerName" checked />
+                            <label for="headerName">Header Name</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="headerNameHtml" value="this is headerName" id="headerNameHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="headerPhone" value="1" id="headerPhone" checked />
+                            <label for="headerPhone">Header Phone</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="headerPhoneHtml" value="13311112222" id="headerPhoneHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="invoiceDate" value="1" id="invoiceDate" checked />
+                            <label for="invoiceDate">Invoice Date</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="invoiceDateHtml" value="2023-05-01" id="invoiceDateHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="invoiceNumber" value="1" id="invoiceNumber" checked />
+                            <label for="invoiceNumber">Invoice Number</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="invoiceNumberHtml" value="1234567890" id="invoiceNumberHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="invoiceTo" value="1" id="invoiceTo" checked />
+                            <label for="invoiceTo">Invoice To</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="invoiceToHtml" value="this is invoiceTo" id="invoiceToHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="itemInfoChecked" value="1" id="itemInfoChecked" checked />
+                            <label for="itemInfoChecked">Item Info</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="netPaidChecked" value="1" id="netPaidChecked" checked />
+                            <label for="netPaidChecked">Net Paid</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="shippingChecked" value="1" id="shippingChecked" checked />
+                            <label for="shippingChecked">Shipping</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="subtotalChecked" value="1" id="subtotalChecked" checked />
+                            <label for="subtotalChecked">Subtotal</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="totalChecked" value="1" id="totalChecked" checked />
+                            <label for="totalChecked">Total</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="voucherAppliedChecked" value="1" id="voucherAppliedChecked" checked />
+                            <label for="voucherAppliedChecked">Voucher Applied</label>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="orderDate" value="1" id="orderDate" checked />
+                            <label for="orderDate">Order Date</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="orderDateHtml" value="2023-04-02" id="orderDateHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="orderNumber" value="1" id="orderNumber" checked />
+                            <label for="orderNumber">Order Number</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="orderNumberHtml" value="1234567890" id="orderNumberHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="taxInvoice" value="1" id="taxInvoice" checked />
+                            <label for="taxInvoice">Tax Invoice</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="taxInvoiceHtml" value="this is taxInvoice" id="taxInvoiceHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">Width of No Column:</div>
+                        <div class="configContentArea">
+                            <input type="text" name="noWidth" value="12" id="noWidth" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="price" value="1" id="price" checked />
+                            <label for="price">Price</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="priceWidth" value="12" id="priceWidth" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">Width of Product Name Column:</div>
+                        <div class="configContentArea">
+                            <input type="text" name="productNameWidth" value="12" id="productNameWidth" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="remarkChecked" value="1" id="remarkChecked" checked />
+                            <label for="remarkChecked">Remark</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="remarkCheckedHtml" value="this is remark, this is remark, this is remark, this is remark, this is remark, this is remark, this is remark, this is remark" id="remarkCheckedHtml" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="sellerSKU" value="1" id="sellerSKU" checked />
+                            <label for="sellerSKU">SellerSKU</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="sellerSKUWidth" value="12" id="sellerSKUWidth" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <div class="configLabelArea">
+                            <input type="checkbox" name="shopSKU" value="1" id="shopSKU" checked />
+                            <label for="shopSKU">ShopSKU</label>
+                        </div>
+                        <div class="configContentArea">
+                            <input type="text" name="shopSKUWidth" value="12" id="shopSKUWidth" />
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div>
+                        <input type="button" name="genPdfBtn" value="Gen PDF" onclick="genPdf()" />
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class="rightArea" id="rightArea">
+
+            </div>
+        </td>
+    </tr>
+</table>
+<form name="pdfForm" method="post" th:action="@{/nanhuPrint.json}" enctype="application/x-www-form-urlencoded" target="_blank" style="display: none">
+    <input type="hidden" name="fileName" value="head_r_body_r_tail" />
+    <input type="hidden" name="printConfigJSON" value="" />
+</form>
+</body>
+</html>

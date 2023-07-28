@@ -1,0 +1,35 @@
+server:
+  port: 8891
+  servlet:
+    session:
+      timeout: 3600
+
+spring:
+  profiles:
+    active: prd
+  aop:
+    auto: true
+    proxy-target-class: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: UTF-8 #编码
+    suffix: .html #模板后缀
+    mode: HTML #模板
+  freemarker:
+    cache: false
+  velocity:
+    cache: false
+
+# ERROR, WARN, INFO, DEBUG, TRACE
+logging:
+  level:
+    root: info
+
+---
+spring:
+  profiles: dev
+
+---
+spring:
+  profiles: prd

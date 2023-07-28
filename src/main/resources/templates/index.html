@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}">
+
+</head>
+
+<body>
+<div class="thumbnailsWrapper">
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/r_head_body_r_tail.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg1"></div>
+            <div>Repeat Head And Body</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/head_r_body_r_tail.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg2"></div>
+            <div>Repeat Body</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/normal.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg3"></div>
+            <div>Normal</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/pageNum.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg4"></div>
+            <div>Show pageNum</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/glovePrinting.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg5"></div>
+            <div>Glove Printing</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/normalWaterPrint.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg6"></div>
+            <div>Water Print</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/customContent.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg7"></div>
+            <div>Custom Content</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/fontCustom.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg8"></div>
+            <div>Font Custom</div>
+        </a>
+    </div>
+
+    <div class="thumbnailsDiv">
+        <a th:href="@{/config/twoMode.html}" target="_blank">
+            <div class="thumbnailsImgCommon thumbnailsImg9"></div>
+            <div>Alternate Printing</div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

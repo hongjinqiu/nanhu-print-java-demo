@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="https://github.com/hongjinqiu/nanhu-print-java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <style>
+    </style>
+    <macros>
+    </macros>
+
+    <body pageSizePdf="A4" rotate="false" paddingLeft="50px"
+          paddingRight="50px" paddingTop="30px" paddingBottom="30px" width="685px" height="840px">
+        <table cellspacing="0" cellpadding="0" width="100%" tableLayout="fixed">
+            <tbody>
+                <tr>
+                    <td width="100%">
+                        <div fontSize="20" textAlign="center"><span value="Supplier Agreement" /></div>
+                        <div paddingTop="20">
+                            <span value="Buyer (hereinafter referred to as &quot;Party A&quot;): " />
+                            <span value="js:data.buyer" />
+                        </div>
+                        <div paddingTop="10">
+                            <span value="Legal Representative: " />
+                            <span value="js:data.legalMan" />
+                        </div>
+                        <div paddingTop="10">
+                            <span value="Contact Person: " />
+                            <span value="js:data.contactPerson" />
+                        </div>
+                        <div paddingTop="10">
+                            <span value="Phone: " />
+                            <span value="js:data.phone" />
+                        </div>
+                        <div paddingTop="10">
+                            <span value="Address: " />
+                            <span value="js:data.address" />
+                        </div>
+                        <div paddingTop="10">
+                            <span value="Postcode: " />
+                            <span value="js:data.postcode" />
+                        </div>
+                        <div paddingTop="10">
+                            <span value="Bank Account: " />
+                            <span value="js:data.bankAccount" />
+                        </div>
+
+                        <div fontWeight="bold">
+                            <css>
+                                <paddingTop pdf="50" js="30px" />
+                            </css>
+                            <span value="Supplier (hereinafter referred to as &quot;Party B&quot;): " />
+                            <span value="js:data.supplierSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Legal Representative: " />
+                            <span value="js:data.legalManSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Address: xxxxxxxxx" />
+                            <span value="js:data.addressSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Contact Person: xxxxxxxxx" />
+                            <span value="js:data.contactPersonSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Phone: xxxxxxxxx" />
+                            <span value="js:data.phoneSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Postcode: xxxxxxxxx" />
+                            <span value="js:data.postcodeSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Bank Name: " />
+                            <span value="js:data.bankNameSeller" />
+                        </div>
+                        <div fontWeight="bold" paddingTop="10">
+                            <span value="Bank Account: " />
+                            <span value="js:data.bankAccountSeller" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>

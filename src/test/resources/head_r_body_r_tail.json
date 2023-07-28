@@ -1,0 +1,184 @@
+{
+  "printConfigTemplate": {
+      "fontFamily": "arial"
+      ,"fontSize": "0"
+      ,"headerAddress": "1"
+      ,"headerAddressHtml": "this is headerAddress"
+      ,"headerName": "1"
+      ,"headerNameHtml": "this is headerName"
+      ,"headerPhone": "1"
+      ,"headerPhoneHtml": "13311112222"
+      ,"invoiceDate": "1"
+      ,"invoiceDateHtml": "2023-05-01"
+      ,"invoiceNumber": "1"
+      ,"invoiceNumberHtml": "1234567890"
+      ,"invoiceTo": "1"
+      ,"invoiceToHtml": "this is invoiceTo"
+      ,"itemInfoChecked": "1"
+      ,"netPaidChecked": "1"
+      ,"noWidth": "12"
+      ,"orderDate": "1"
+      ,"orderDateHtml": "2023-04-02"
+      ,"orderNumber": "1"
+      ,"orderNumberHtml": "1234567890"
+      ,"price": "1"
+      ,"priceWidth": "12"
+      ,"productNameWidth": "12"
+      ,"remarkChecked": "1"
+      ,"remarkCheckedHtml": "this is remark, this is remark, this is remark, this is remark, this is remark, this is remark, this is remark, this is remark,"
+      ,"sellerSKU": "1"
+      ,"sellerSKUWidth": "12"
+      ,"shippingChecked": "1"
+      ,"shopSKU": "1"
+      ,"shopSKUWidth": "12"
+      ,"subtotalChecked": "1"
+      ,"taxInvoice": "1"
+      ,"taxInvoiceHtml": "this is taxInvoice"
+      ,"totalChecked": "1"
+      ,"voucherAppliedChecked": "1"
+  },
+  "isCustomerConfig": 1,
+  "order": {
+    "voucher": "0.00",
+    "customer_first_name": "First Name",
+    "order_number": "300034416",
+    "created_at": "2014-10-15 18:36:05 +0800",
+    "created_at_show": "15 Oct 2014",// 程序添加
+    "invoice_date_show": "04 Jue 2019",// 程序添加
+    "currencyShow": "SGB",// 程序添加
+    "paid_price_sum": "2.00",// 程序添加
+    "paid_price_voucher_sum": "2.00",// 程序添加
+    "voucher_code": "3432",
+    "gift_option": "0",
+    "shipping_fee": "0.00",
+    "branch_number": "2222",
+    "tax_code": "1234",
+    "customer_last_name": "last_name",
+    "updated_at": "2014-10-15 18:36:05 +0800",
+    "promised_shipping_times": "2017-03-24 16:09:22",
+    "items_count": "1",
+    "price": "99.00",
+    "delivery_info": "1",
+    "statuses": "delivered",
+    "address_billing": {
+      "country": "Singapore",
+      "address3": "address3",
+      "address2": "address2",
+      "city": "Singapore-Central",
+      "phone": "81***8",
+      "address1": "22 leonie hill road, #13-01",
+      "post_code": "239195",
+      "phone2": "24***22",
+      "last_name": "Last Name",
+      "address5": "address5",
+      "address4": "address4",
+      "first_name": "First Name"
+    },
+    "national_registration_number": "1123",
+    "extra_attributes": "{\"TaxInvoiceRequested\":\"true\"}",
+    "order_id": "16090",
+    "gift_message": "Gift",
+    "payment_method": "COD",
+    "remarks": "remarks",
+    "address_shipping": {
+      "country": "Singapore",
+      "address3": "address3",
+      "address2": "address2",
+      "city": "Singapore-Central",
+      "phone": "94236248",
+      "address1": "318 tanglin road, phoenix park, #01-59",
+      "post_code": "247979",
+      "phone2": "1******2",
+      "last_name": "Last Name",
+      "address5": "1******2",
+      "address4": "address4",
+      "first_name": "First Name"
+    },
+    "itemLi": [
+      {
+        "paid_price": "99.00",
+        "product_main_image": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+        "tax_amount": "6.48",
+        "voucher_platform": "0.00",
+        "reason": "reason",
+        "product_detail_url": "https://cn.bing.com/",
+        "promised_shipping_time": "2014-10-15 19:12:15 +0800",
+        "purchase_order_id": "3454",
+        "voucher_seller": "0.00",
+        "shipping_type": "Dropshipping",
+        "created_at": "2014-10-15 19:12:15 +0800",
+        "voucher_code": "X3453",
+        "package_id": "345",
+        "variation": "1",
+        "wallet_credits": "0.00",
+        "updated_at": "2014-10-15 19:12:15 +0800",
+        "purchase_order_number": "345345",
+        "currency": "SGD",
+        "shipping_provider_type": "standard",
+        "sku": "BRSD#02",
+        "invoice_number": "1342",
+        "cancel_return_initiator": "cancellation-customer",
+        "shop_sku": "BE494HLAAUE3SGAMZ-39898",
+        "is_digital": "0",
+        "item_price": "99.00",
+        "shipping_service_cost": "0",
+        "tracking_code_pre": "23534",
+        "tracking_code": "456",
+        "shipping_amount": "0.00",
+        "order_item_id": "98108",
+        "reason_detail": "reason detail",
+        "shop_id": "dawen dp",
+        "return_status": "1",
+        "name": "Bean Rester Dooby Red",
+        "shipment_provider": "LEL",
+        "voucher_amount": "0.00",
+        "digital_delivery_info": "delivery",
+        "extra_attributes": "null",
+        "order_id": "31202",
+        "status": "canceled"
+      },
+      {
+        "paid_price": "99.00",
+        "product_main_image": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+        "tax_amount": "6.48",
+        "voucher_platform": "0.00",
+        "reason": "reason",
+        "product_detail_url": "https://cn.bing.com/",
+        "promised_shipping_time": "2014-10-15 19:12:15 +0800",
+        "purchase_order_id": "3454",
+        "voucher_seller": "0.00",
+        "shipping_type": "Dropshipping",
+        "created_at": "2014-10-15 19:12:15 +0800",
+        "voucher_code": "X3453",
+        "package_id": "345",
+        "variation": "1",
+        "wallet_credits": "0.00",
+        "updated_at": "2014-10-15 19:12:15 +0800",
+        "purchase_order_number": "345345",
+        "currency": "SGD",
+        "shipping_provider_type": "standard",
+        "sku": "BRSD#02",
+        "invoice_number": "1342",
+        "cancel_return_initiator": "cancellation-customer",
+        "shop_sku": "BE494HLAAUE3SGAMZ-39898",
+        "is_digital": "0",
+        "item_price": "99.00",
+        "shipping_service_cost": "0",
+        "tracking_code_pre": "23534",
+        "tracking_code": "456",
+        "shipping_amount": "0.00",
+        "order_item_id": "98108",
+        "reason_detail": "reason detail",
+        "shop_id": "dawen dp",
+        "return_status": "1",
+        "name": "Bean Rester Dooby Red",
+        "shipment_provider": "LEL",
+        "voucher_amount": "0.00",
+        "digital_delivery_info": "delivery",
+        "extra_attributes": "null",
+        "order_id": "31202",
+        "status": "canceled"
+      }
+    ]
+  }
+}

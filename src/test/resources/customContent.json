@@ -1,0 +1,19 @@
+{
+  "data": {
+    "buyer": "xxxxxxxxxxxxxxx",
+    "legalMan": "xxxxxxxxxxxxxxx",
+    "contactPerson": "xxxxxxxxxxxxxxx",
+    "phone": "123456789123",
+    "address": "xxxxxxxxxxxxxxx",
+    "postcode": "123456",
+    "bankAccount": "xxxxxxxxxxxxxxx",
+    "supplierSeller": "supplierSeller",
+    "legalManSeller": "xxxxxxxxxxxxxxx",
+    "addressSeller": "xxxxxxxxxxxxxxx",
+    "contactPersonSeller": "xxxxxxxxxxxxxxx",
+    "phoneSeller": "654321",
+    "postcodeSeller": "123456",
+    "bankNameSeller": "xxxxxxxxxxxxxxx",
+    "bankAccountSeller": "12345678901234560"
+  }
+}

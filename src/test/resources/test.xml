@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html
+        xmlns="https://github.com/hongjinqiu/nanhu-print-java"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <style>
+        <css name="f22" >
+            <fontSize js="22px" pdf="16.923076923076923" ></fontSize>
+        </css>
+        <css name="f22_scale" >
+            <fontSize js="26.4px" pdf="16.923076923076923" ></fontSize>
+            <transformByJs js="scale(0.833333)" ></transformByJs>
+        </css>
+        <css name="f20" >
+            <fontSize js="20px" pdf="15.384615384615383" ></fontSize>
+        </css>
+        <css name="f13" >
+            <fontSize js="13px" pdf="10.0" ></fontSize>
+        </css>
+        <css name="f12" >
+            <fontSize js="12px" pdf="9.23076923076923" ></fontSize>
+        </css>
+        <css name="f10" >
+            <fontSize js="12px" pdf="7.692307692307692" ></fontSize>
+            <transformByJs js="scale(0.833333)" ></transformByJs>
+        </css>
+        <css name="fwb" >
+            <fontWeight js="bold" ></fontWeight>
+        </css>
+        <css name="tl" >
+            <textAlign js="left" ></textAlign>
+        </css>
+        <css name="tc" >
+            <textAlign js="center" ></textAlign>
+        </css>
+        <css name="tr" >
+            <textAlign js="right" ></textAlign>
+        </css>
+        <css name="breakWord" >
+            <whiteSpace js="pre-wrap" pdf="pre-wrap" ></whiteSpace>
+            <wordWrap js="break-word" ></wordWrap>
+        </css>
+        <css name="borderLeft" >
+            <borderLeftStyle js="solid" ></borderLeftStyle>
+            <borderLeftWidth js="1px" pdf="0.1" ></borderLeftWidth>
+            <borderLeftColor js="black" ></borderLeftColor>
+        </css>
+        <css name="borderTop" >
+            <borderTopStyle js="solid" ></borderTopStyle>
+            <borderTopWidth js="1px" pdf="0.1" ></borderTopWidth>
+            <borderTopColor js="black" ></borderTopColor>
+        </css>
+        <css name="borderRight" >
+            <borderRightStyle js="solid" ></borderRightStyle>
+            <borderRightWidth js="1px" pdf="0.1" ></borderRightWidth>
+            <borderRightColor js="black" ></borderRightColor>
+        </css>
+        <css name="borderBottom" >
+            <borderBottomStyle js="solid" ></borderBottomStyle>
+            <borderBottomWidth js="1px" pdf="0.1" ></borderBottomWidth>
+            <borderBottomColor js="black" ></borderBottomColor>
+        </css>
+        <css name="bodyLineHeight" >
+            <paddingTop js="2px" ></paddingTop>
+            <paddingBottom js="2px" ></paddingBottom>
+        </css>
+        <css name="tdPadding" >
+            <paddingLeft js="8px" ></paddingLeft>
+            <paddingRight js="8px" ></paddingRight>
+        </css>
+        <css name="totalRightPadding1" >
+            <paddingRight js="10px" ></paddingRight>
+        </css>
+        <css name="totalRightPadding5" >
+            <paddingRight js="5px" ></paddingRight>
+        </css>
+        <css name="tdBorderCls1" >
+            <borderTopStyle js="solid" ></borderTopStyle>
+            <borderTopWidth js="1px" pdf="0.1" ></borderTopWidth>
+            <borderTopColor js="#cccccc" ></borderTopColor>
+            <borderRightStyle js="solid" ></borderRightStyle>
+            <borderRightWidth js="1px" pdf="0.1" ></borderRightWidth>
+            <borderRightColor js="#cccccc" ></borderRightColor>
+            <borderBottomStyle js="solid" ></borderBottomStyle>
+            <borderBottomWidth js="1px" pdf="0.1" ></borderBottomWidth>
+            <borderBottomColor js="#cccccc" ></borderBottomColor>
+            <borderLeftStyle js="solid" ></borderLeftStyle>
+            <borderLeftWidth js="1px" pdf="0.1" ></borderLeftWidth>
+            <borderLeftColor js="#cccccc" ></borderLeftColor>
+        </css>
+        <css name="tdBorderBottomCls1" >
+            <borderBottomStyle js="solid" ></borderBottomStyle>
+            <borderBottomWidth js="2px" pdf="1" ></borderBottomWidth>
+            <borderBottomColor js="black" ></borderBottomColor>
+        </css>
+        <css name="tdBorderBottomCls2" >
+            <borderBottomStyle js="solid" ></borderBottomStyle>
+            <borderBottomWidth js="1px" pdf="0.5" ></borderBottomWidth>
+            <borderBottomColor js="black" ></borderBottomColor>
+        </css>
+    </style>
+    <body pageSizePdf="A4" rotate="false" width="685px" height="840px" paddingLeft="50px" paddingTop="30px" paddingRight="50px" paddingBottom="30px" fontFamily="arial" >
+        <params >
+            <param name="extendToFillBody" value="default" ></param>
+        </params>
+        <table width="100%" tableLayout="fixed" cellspacing="0" cellpadding="0" >
+            <thead >
+                <tr >
+                    <th width="12%" height="1px" ></th>
+                    <th width="12%" height="1px" ></th>
+                    <th width="12%" height="1px" ></th>
+                    <th width="12%" height="1px" ></th>
+                    <th width="12%" height="1px" ></th>
+                    <th height="1px" ></th>
+                </tr>
+                <tr >
+                    <td cls="tl bodyLineHeight tdBorderBottomCls1" colspan="6" >
+                        <div cls="f12" >
+                            <span value="this is headerName" ></span>
+                        </div>
+                        <div cls="f12" >
+                            <span value="this is headerAddress" ></span>
+                        </div>
+                        <div cls="f12" >
+                            <span value="13311112222" ></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="6" >
+                        <div cls="f20 tc" >
+                            <span value="this is taxInvoice" ></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="6" >
+                        <div height="10px" ></div>
+                        <table width="100%" tableLayout="fixed" cellspacing="0" cellpadding="0" >
+                            <tbody >
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" width="54%" >
+                                        <div cls="f12" >
+                                            <span value="1234567890:" ></span>
+                                        </div>
+                                    </td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" width="2%" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" >
+                                        <div cls="f12" >
+                                            <span value="1342" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" width="54%" >
+                                        <div cls="f12" >
+                                            <span value="1234567890:" ></span>
+                                        </div>
+                                    </td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" width="2%" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" >
+                                        <div cls="f12" >
+                                            <span value="300034416" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" width="54%" >
+                                        <div cls="f12" >
+                                            <span value="2023-04-02:" ></span>
+                                        </div>
+                                    </td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" width="2%" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" >
+                                        <div cls="f12" >
+                                            <span value="15 Oct 2014" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" width="54%" >
+                                        <div cls="f12" >
+                                            <span value="this is invoiceTo:" ></span>
+                                        </div>
+                                    </td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" width="2%" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" >
+                                        <div cls="f12" >
+                                            <span value="First Name last_name" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" width="54%" >
+                                        <div cls="f12" >
+                                            <span value="2023-05-01:" ></span>
+                                        </div>
+                                    </td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" width="2%" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" >
+                                        <div cls="f12" >
+                                            <span value="04 Jue 2019" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="6" >
+                        <div height="10px" ></div>
+                        <table width="100%" tableLayout="fixed" cellspacing="0" cellpadding="0" >
+                            <tbody >
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" width="48%" >
+                                        <div cls="f12 fwb" >
+                                            <span value="BILLING ADDRESS" ></span>
+                                        </div>
+                                    </td>
+                                    <td width="4%" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" >
+                                        <div cls="f12 fwb" >
+                                            <span value="SHIPPING ADDRESS" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" verticalAlign="top" >
+                                        <div cls="f12" >
+                                            <span value="22 leonie hill road, #13-01" ></span>
+                                            <span value=", address2" ></span>
+                                            <span value=", address2" ></span>
+                                            <span value=", address3" ></span>
+                                            <span value=", address4" ></span>
+                                            <span value=", address5" ></span>
+                                            <span value=", Singapore-Central" ></span>
+                                            <span value=", Singapore" ></span>
+                                        </div>
+                                    </td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" verticalAlign="top" >
+                                        <div cls="f12" >
+                                            <span value="318 tanglin road, phoenix park, #01-59" ></span>
+                                            <span value=", address2" ></span>
+                                            <span value=", address2" ></span>
+                                            <span value=", address3" ></span>
+                                            <span value=", address4" ></span>
+                                            <span value=", 1******2" ></span>
+                                            <span value=", Singapore-Central" ></span>
+                                            <span value=", Singapore" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td cls="tdBorderCls1 tl bodyLineHeight" verticalAlign="top" >
+                                        <div cls="f12" >
+                                            <span value="Contact Phone:" ></span>
+                                            <span value=" 81***8" ></span>
+                                            <span value=", 24***22" ></span>
+                                        </div>
+                                    </td>
+                                    <td ></td>
+                                    <td cls="tdBorderCls1 bodyLineHeight" verticalAlign="top" >
+                                        <div cls="f12" >
+                                            <span value="Contact Phone:" ></span>
+                                            <span value=" 94236248" ></span>
+                                            <span value=", 1******2" ></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div cls="f12" >
+                            <span value="Payment Method: " ></span>
+                            <span value="COD" ></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr >
+                    <td cls="bodyLineHeight" colspan="6" >
+                        <div height="10px" ></div>
+                        <div cls="f12 fwb" >
+                            <span value="Your ordered items for " ></span>
+                            <span value="300034416" ></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr >
+                    <td cls="tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight fwb" >
+                            <span value="#" ></span>
+                        </div>
+                    </td>
+                    <td cls="tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight fwb" >
+                            <span value="Product name" ></span>
+                        </div>
+                    </td>
+                    <td cls="tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight fwb" >
+                            <span value="Seller SKU" ></span>
+                        </div>
+                    </td>
+                    <td cls="tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight fwb" >
+                            <span value="Shop SKU" ></span>
+                        </div>
+                    </td>
+                    <td cls="tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight fwb" >
+                            <span value="Price" ></span>
+                        </div>
+                    </td>
+                    <td cls="tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight fwb" >
+                            <span value="Paid Price" ></span>
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody >
+                <tr >
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="1" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="Bean Rester Dooby Red" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="BRSD#02" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="BE494HLAAUE3SGAMZ-39898" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                            <span value="99.00" format="amt" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                            <span value="99.00" format="amt" ></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr >
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="2" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="Bean Rester Dooby Red" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="BRSD#02" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div cls="f12 bodyLineHeight breakWord" >
+                            <span value="BE494HLAAUE3SGAMZ-39898" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                            <span value="99.00" format="amt" ></span>
+                        </div>
+                    </td>
+                    <td cls="tl tdBorderCls1 tdPadding" >
+                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                            <span value="99.00" format="amt" ></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tloop countJs="20" >
+                <tr >
+                    <td width="12%" >
+                        <span value="1" visibility="hidden" ></span>
+                        <span value=" " ></span>
+                    </td>
+                    <td width="12%" ></td>
+                    <td width="12%" ></td>
+                    <td width="12%" ></td>
+                    <td width="12%" ></td>
+                    <td ></td>
+                </tr>
+            </tloop>
+            <tbottom >
+                <tr >
+                    <td colspan="6" >
+                        <table width="100%" tableLayout="fixed" cellspacing="0" cellpadding="0" >
+                            <tbody >
+                                <tr >
+                                    <td width="50%" ></td>
+                                    <td >
+                                        <table width="100%" tableLayout="fixed" cellspacing="0" cellpadding="0" >
+                                            <tbody >
+                                                <tr >
+                                                    <td cls="tl" >
+                                                        <div cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="Subtotal:" ></span>
+                                                        </div>
+                                                    </td>
+                                                    <td cls="tr" >
+                                                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="SGB " fontStyle="italic" ></span>
+                                                            <span value="2.00" format="amt" ></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td cls="tl tdBorderBottomCls1" >
+                                                        <div cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="Less: Voucher applied:" ></span>
+                                                        </div>
+                                                    </td>
+                                                    <td cls="tr tdBorderBottomCls1" >
+                                                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="SGB " fontStyle="italic" ></span>
+                                                            <span value="0.00" format="amt" ></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td cls="tl" >
+                                                        <div cls="f12 bodyLineHeight breakWord fwb" >
+                                                            <span value="Total:" ></span>
+                                                        </div>
+                                                    </td>
+                                                    <td cls="tr" >
+                                                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord fwb" >
+                                                            <span value="SGB " fontStyle="italic" ></span>
+                                                            <span value="2.00" format="amt" ></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td cls="tl tdBorderBottomCls1" >
+                                                        <div cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="Shipping:" ></span>
+                                                        </div>
+                                                    </td>
+                                                    <td cls="tr tdBorderBottomCls1" >
+                                                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="+SGB " fontStyle="italic" ></span>
+                                                            <span value="0.00" format="amt" ></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td cls="tl" >
+                                                        <div cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="Net paid:" ></span>
+                                                        </div>
+                                                    </td>
+                                                    <td cls="tr" >
+                                                        <div scaleToFitContentByPdf="true" cls="f12 bodyLineHeight breakWord" >
+                                                            <span value="SGB " fontStyle="italic" ></span>
+                                                            <span value="99.00" format="amt" ></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr >
+                                                    <td cls="tdBorderBottomCls2" height="1px" colspan="2" ></td>
+                                                </tr>
+                                                <tr >
+                                                    <td cls="tdBorderBottomCls2" height="1px" colspan="2" ></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="6" >
+                        <div cls="f12" paddingTop="10px" >
+                            <span value="this is remark, this is remark, this is remark, this is remark, this is remark, this is remark, this is remark, this is remark," ></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbottom>
+        </table>
+    </body>
+</html>

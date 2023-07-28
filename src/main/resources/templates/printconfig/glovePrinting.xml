@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="https://github.com/hongjinqiu/nanhu-print-java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <style>
+    </style>
+    <macros>
+    </macros>
+
+    <body pageSizePdf="A5" rotate="true" paddingLeft="0px"
+          paddingRight="0px" paddingTop="0px" paddingBottom="0px">
+        <set var="totalWidth" valueJs="'594px'" />
+        <css>
+            <width js="js:totalWidth" />
+            <height js="420px" />
+        </css>
+
+        <table cellspacing="0" cellpadding="0" width="100%" tableLayout="fixed">
+            <tbody>
+                <tr>
+                    <td width="100%">
+                        <div backgroundSize="contain" width="js:totalWidth" height="420px">
+                            <css>
+                                <backgroundImage js="url('http://localhost:8891/images/zzfp.png')" />
+                            </css>
+                            <!--
+                            backgroundImage="url('http://localhost:8891/images/zzfp.png')"
+                            -->
+                            <set var="headPaddingLeft" valueJs="'460px'" />
+                            <div paddingLeft="js:headPaddingLeft" paddingTop="24px"><span value="InvoiceCode" /> </div>
+                            <div paddingLeft="js:headPaddingLeft" paddingTop="3px"><span value="InvoiceNum" /> </div>
+                            <div paddingLeft="js:headPaddingLeft" paddingTop="3px"><span value="InvoiceDate" /> </div>
+                            <div paddingTop="3px">
+                                <table cellspacing="0" cellpadding="0" width="js:totalWidth" tableLayout="fixed" explain="true">
+                                    <tbody>
+                                        <tr>
+                                            <td width="js:headPaddingLeft">
+                                                <div paddingLeft="62px"><span value="machineCode" /> </div>
+                                            </td>
+                                            <td>
+                                                <div><span value="validCode" /> </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div paddingTop="10px">
+                                <table cellspacing="0" cellpadding="0" width="js:totalWidth" tableLayout="fixed" explain="true">
+                                    <tbody>
+                                        <tr>
+                                            <td width="360px">
+                                                <set var="buyerPaddingLeft" valueJs="'110px'" />
+                                                <div paddingLeft="js:buyerPaddingLeft"><span value="name" /> </div>
+                                                <div paddingLeft="js:buyerPaddingLeft" paddingTop="3px"><span value="taxNo" /> </div>
+                                            </td>
+                                            <td>
+                                                <div width="200px"><span value="wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" /> </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
