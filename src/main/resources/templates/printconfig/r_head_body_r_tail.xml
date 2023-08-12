@@ -658,7 +658,7 @@
                     </td>
                 </tr>
             </tloop>
-            <tbottom>
+            <tbottom showPosition="lastPage">
                 <tr>
                     <td width="js:printConfigTemplate.noWidth + '%'" cls="tdBorderBottomCls3 tdBorderLeftCls4">
                         <if testJs="isCustomerConfig == '1'">
