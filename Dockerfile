@@ -1,4 +1,4 @@
-FROM openjdk:8u171-jre
+FROM eclipse-temurin:11-jre-jammy
 
 ENV USERNAME deployee
 RUN useradd -ms /bin/bash ${USERNAME}
